@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/img_logo_register"
+        android:layout_width="196dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/logo_paulistar"/>
+
+
+    <TextView
+        android:id="@+id/txv_fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo_register"
+        android:layout_marginTop="72dp"
+        android:text="Nome Completo"
+        android:textColor="#00C9DA"
+        android:textSize="24dp"
+        android:layout_marginLeft="2dp"/>
+
+    <EditText
+        android:id="@+id/edt_fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_fullName"
+        android:hint="Fulano Sicrano"
+        android:backgroundTint="#78E1EC"
+        android:minHeight="48dp"
+        android:textColorHint="#78E1EC"/>
+
+    <TextView
+        android:id="@+id/txv_email_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_fullName"
+        android:text="E-mail"
+        android:textColor="#00C9DA"
+        android:textSize="24dp"
+        android:layout_marginLeft="2dp"/>
+
+    <EditText
+        android:id="@+id/edt_email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_email_register"
+        android:hint="Digite seu e-mail"
+        android:backgroundTint="#78E1EC"
+        android:minHeight="48dp"
+        android:textColorHint="#78E1EC"/>
+
+
+</RelativeLayout>
