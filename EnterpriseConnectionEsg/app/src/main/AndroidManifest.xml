@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnterpriseConnectionEsg">
         <activity
+            android:name=".test"
+            android:exported="false" />
+        <activity
+            android:name=".register_screen"
+            android:exported="false" />
+        <activity
+            android:name=".register_screen2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

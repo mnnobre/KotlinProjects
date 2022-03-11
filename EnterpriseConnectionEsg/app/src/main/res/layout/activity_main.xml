@@ -75,11 +75,10 @@
         android:layout_height="58dp"
         android:layout_below="@id/txv_forgetPassword"
         android:layout_marginTop="60dp"
+        android:backgroundTint="#00C9DA"
         android:text="Entrar"
         android:textAlignment="center"
-        android:textSize="22dp"
-        android:backgroundTint="#00C9DA"
-        />
+        android:textSize="22dp" />
 
     <TextView
         android:id="@+id/txv_newUser"
