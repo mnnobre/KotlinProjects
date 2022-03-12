@@ -15,9 +15,14 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         val register = findViewById<TextView>(R.id.txv_register)
-
         register.setOnClickListener {
             val i = Intent (this, register_screen::class.java)
+            startActivity(i)
+        }
+
+        val login = findViewById<Button>(R.id.btn_login)
+        login.setOnClickListener {
+            val i = Intent (this, home_screen::class.java)
             startActivity(i)
         }
 

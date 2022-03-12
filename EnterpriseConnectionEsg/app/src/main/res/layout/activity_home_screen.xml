@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/img_perfil"
+                app:civ_border_color="@color/primary"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Matheus Nobre"
+                android:textColor="@color/primary"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:text="Cargo"
+                android:textColor="@color/primary"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
+
+
+        //--  BUTTON CHALLENGES
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_challenges"
+                android:layout_width="172dp"
+                android:layout_height="184dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="268dp"
+                android:backgroundTint="@color/secundary"
+                app:cornerRadius="22dp"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="3dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/img_challenge"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="316dp"
+                android:elevation="2dp"
+                android:src="@drawable/btndesafio" />
+
+            <TextView
+                android:id="@+id/txv_challenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_challenge"
+                android:layout_marginStart="70dp"
+                android:elevation="2dp"
+                android:text="Desafios"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        //--  BUTTON POINTS
+            <Button
+                android:id="@+id/btn_points"
+                android:layout_width="172dp"
+                android:layout_height="184dp"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="268dp"
+                android:backgroundTint="@color/secundary"
+                app:cornerRadius="22dp"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="3dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/img_points"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="316dp"
+                android:elevation="2dp"
+                android:src="@drawable/btnpoints" />
+            <TextView
+                android:id="@+id/txv_pointsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="282dp"
+                android:layout_below="@id/img_points"
+                android:elevation="2dp"
+                android:text="0000"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txv_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txv_pointsCount"
+                android:layout_marginStart="274dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:elevation="2dp"
+                android:text="Pontos"/>
+            //-- FEATURE IMPLEMENTATION
+            <Button
+                android:id="@+id/future"
+                android:layout_width="366dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="22dp"
+                android:layout_below="@id/btn_points"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/secundary"
+                app:cornerRadius="22dp"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="3dp" />
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

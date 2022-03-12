@@ -80,6 +80,7 @@
         android:backgroundTint="#78E1EC"
         android:hint="Digite sua senha"
         android:minHeight="48dp"
+        android:textColor="#00C9DA"
         android:textColorHint="#78E1EC" />
 
     <EditText
@@ -110,18 +111,19 @@
         android:backgroundTint="#78E1EC"
         android:hint="Digite seu CEP"
         android:minHeight="48dp"
+        android:textColor="#00C9DA"
         android:textColorHint="#78E1EC" />
 
-    <TextView
-        android:id="@+id/txv_forgetCep"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_cep"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txv_cep"
         android:layout_marginLeft="34dp"
         android:layout_toEndOf="@id/edt_cep"
-        android:text="Esqueci o CEP"
-        android:textColor="#00C9DA"
-        android:textSize="24dp" />
+        android:backgroundTint="#00C9DA"
+        android:text="Pesquisar CEP" />
+
 
     <TextView
         android:id="@+id/txv_street"
@@ -141,14 +143,16 @@
         android:backgroundTint="#78E1EC"
         android:hint="Digite seu endereço"
         android:minHeight="48dp"
+        android:textColor="#00C9DA"
         android:textColorHint="#78E1EC" />
 
     <TextView
         android:id="@+id/txv_complement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_cep"
+        android:layout_below="@id/btn_cep"
         android:layout_marginLeft="34dp"
+        android:layout_marginTop="2dp"
         android:layout_toEndOf="@id/edt_cep"
         android:text="Complemento"
         android:textColor="#00C9DA"
@@ -158,12 +162,13 @@
         android:id="@+id/edt_complement"
         android:layout_width="174dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txv_street"
+        android:layout_below="@+id/txv_complement"
         android:layout_marginLeft="32dp"
         android:layout_toEndOf="@id/edt_cep"
         android:backgroundTint="#78E1EC"
         android:hint="Apt. 402"
         android:minHeight="48dp"
+        android:textColor="#00C9DA"
         android:textColorHint="#78E1EC" />
 
     <TextView
@@ -184,6 +189,7 @@
         android:backgroundTint="#78E1EC"
         android:hint="Digite seu numero"
         android:minHeight="48dp"
+        android:textColor="#00C9DA"
         android:textColorHint="#78E1EC" />
 
     <TextView
@@ -191,11 +197,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/edt_complement"
-        android:layout_toEndOf="@id/edt_cep"
         android:layout_marginLeft="34dp"
+        android:layout_toEndOf="@id/edt_cep"
         android:text="Bairro"
-        android:textSize="24dp"
-        android:textColor="#00C9DA" />
+        android:textColor="#00C9DA"
+        android:textSize="24dp" />
 
     <EditText
         android:id="@+id/edt_district"
@@ -207,6 +213,31 @@
         android:backgroundTint="#78E1EC"
         android:hint="Seu bairro"
         android:minHeight="48dp"
+        android:textColor="#00C9DA"
+        android:textColorHint="#78E1EC" />
+
+    <TextView
+        android:id="@+id/txv_uf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_district"
+        android:layout_marginLeft="34dp"
+        android:layout_toEndOf="@id/edt_cep"
+        android:text="Estado"
+        android:textColor="#00C9DA"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/edt_uf"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv_uf"
+        android:layout_marginLeft="32dp"
+        android:layout_toEndOf="@id/edt_cep"
+        android:backgroundTint="#78E1EC"
+        android:hint="SP"
+        android:minHeight="48dp"
+        android:textColor="#00C9DA"
         android:textColorHint="#78E1EC" />
 
     <TextView
@@ -227,6 +258,7 @@
         android:backgroundTint="#78E1EC"
         android:hint="São Paulo"
         android:minHeight="48dp"
+        android:textColor="#00C9DA"
         android:textColorHint="#78E1EC" />
 
     <Button
@@ -247,7 +279,7 @@
         android:layout_below="@id/btn_register"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="8dp"
-        android:text="Ja possui uma conta?"
+        android:text="Já possui uma conta?"
         android:textColor="#78E1EC"
         />
 

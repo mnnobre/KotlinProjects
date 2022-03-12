@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:src="@drawable/img_perfil"
+                app:civ_border_color="@color/primary"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Matheus Nobre"
+                android:textColor="@color/primary"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+//--  BUTTON CHALLENGES
+
+        <Button
+            android:id="@+id/btn_challenges"
+            android:layout_width="172dp"
+            android:layout_height="184dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="324dp"
+            android:backgroundTint="@color/secundary"
+            app:cornerRadius="22dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="3dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/img_challenge"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="362dp"
+            android:elevation="2dp"
+            android:src="@drawable/btndesafio" />
+        <TextView
+            android:id="@+id/txv_challenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="430dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:elevation="2dp"
+            android:text="Desafios"/>
+
+        //--  BUTTON POINTS
+        <Button
+            android:id="@+id/btn_points"
+            android:layout_width="172dp"
+            android:layout_height="184dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="324dp"
+            android:backgroundTint="@color/secundary"
+            app:cornerRadius="22dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="3dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/img_points"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="274dp"
+            android:layout_marginTop="362dp"
+            android:elevation="2dp"
+            android:src="@drawable/btnpoints" />
+
+        <TextView
+            android:id="@+id/txv_pointsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="282dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:elevation="2dp"
+            android:text="0000"/>
+
+        <TextView
+            android:id="@+id/txv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="444dp"
+            android:layout_marginStart="274dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:elevation="2dp"
+            android:text="Pontos"/>
+
+        //-- FEATURE IMPLEMENTATION
+        <Button
+            android:id="@+id/future"
+            android:layout_width="366dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="508dp"
+            android:backgroundTint="@color/secundary"
+            app:cornerRadius="22dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="3dp" />
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="680dp"
+            android:background="@color/secundary">
+        </View>
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_btnhome"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="687dp"
+            />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
